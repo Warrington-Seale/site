@@ -5,10 +5,10 @@
  * Licensed under MIT (https://github.com/twbs/bootstrap/blob/main/LICENSE)
  */
 :root {
-  --my-dark: #0b0e28;
-  --my-light: #144269;
-  --my-whiteish: #e2e7b9;
-  --my-yellow: #face6c;
+  --my-dark: #2c2b2f;
+  --my-light: #232323;
+  --my-whiteish: #aeb7ca;
+  --my-yellow: #668c;
   --my-red: #e3443f;
   --bs-blue: #0d6efd;
   --bs-indigo: #6610f2;
@@ -34,6 +34,7 @@
   --bs-font-sans-serif: system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
   --bs-font-monospace: SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
   --bs-gradient: linear-gradient(180deg, rgba(255, 255, 255, 0.15), rgba(255, 255, 255, 0));
+  --my
 }
 
 *,
@@ -456,8 +457,17 @@ progress {
 }
 
 .lead {
+  font-family: 'Prompt', sans-serif;
   font-size: 1.25rem;
   font-weight: 300;
+}
+
+.anon {
+font-family: 'Anonymous Pro', monospace;
+}
+
+.glegoo {
+    font-family: 'Glegoo', serif;
 }
 
 .display-1 {
@@ -4229,7 +4239,7 @@ fieldset:disabled .btn {
 }
 
 .navbar-dark .navbar-brand {
-  color: #fff;
+  color: var(--my-red);
 }
 
 .navbar-dark .navbar-brand:hover, .navbar-dark .navbar-brand:focus {
@@ -4237,11 +4247,11 @@ fieldset:disabled .btn {
 }
 
 .navbar-dark .navbar-nav .nav-link {
-  color: rgba(255, 255, 255, 0.55);
+  color: var(--my-whiteish);
 }
 
 .navbar-dark .navbar-nav .nav-link:hover, .navbar-dark .navbar-nav .nav-link:focus {
-  color: rgba(255, 255, 255, 0.75);
+  color: var(--my-yellow);
 }
 
 .navbar-dark .navbar-nav .nav-link.disabled {
@@ -4250,7 +4260,7 @@ fieldset:disabled .btn {
 
 .navbar-dark .navbar-nav .show > .nav-link,
 .navbar-dark .navbar-nav .nav-link.active {
-  color: #fff;
+  color: var(--my-yellow);
 }
 
 .navbar-dark .navbar-toggler {
@@ -4263,7 +4273,7 @@ fieldset:disabled .btn {
 }
 
 .navbar-dark .navbar-text {
-  color: rgba(255, 255, 255, 0.55);
+  color: rgba(var(--my-yellow), 0.55);
 }
 
 .navbar-dark .navbar-text a,
@@ -6091,7 +6101,7 @@ fieldset:disabled .btn {
 }
 
 .link-primary {
-  color: #0d6efd;
+  color: var(--my-yellow);
 }
 
 .link-primary:hover, .link-primary:focus {
@@ -6099,7 +6109,7 @@ fieldset:disabled .btn {
 }
 
 .link-secondary {
-  color: #6c757d;
+  color: var(--my-yellow);
 }
 
 .link-secondary:hover, .link-secondary:focus {
@@ -7326,7 +7336,7 @@ fieldset:disabled .btn {
 }
 
 .bg-dark {
-  background-color: #343a40 !important;
+  background-color: var(--my-light) !important;
 }
 
 .bg-body {
